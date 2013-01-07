@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Club Views feature.
+ */
+
+include_once 'club_views.features.inc';
