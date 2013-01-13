@@ -84,7 +84,7 @@ function club_views_views_default_views() {
          }';
   $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
   $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
-  /* Field: User: Employer */
+  /* Field: Field: Employer */
   $handler->display->display_options['fields']['field_employer']['id'] = 'field_employer';
   $handler->display->display_options['fields']['field_employer']['table'] = 'field_data_field_employer';
   $handler->display->display_options['fields']['field_employer']['field'] = 'field_employer';
@@ -225,7 +225,7 @@ function club_views_views_default_views() {
     9 => 0,
     10 => 0,
   );
-  /* Filter criterion: User: Classification (field_classification) */
+  /* Filter criterion: Field: Classification (field_classification) */
   $handler->display->display_options['filters']['field_classification_tid']['id'] = 'field_classification_tid';
   $handler->display->display_options['filters']['field_classification_tid']['table'] = 'field_data_field_classification';
   $handler->display->display_options['filters']['field_classification_tid']['field'] = 'field_classification_tid';
