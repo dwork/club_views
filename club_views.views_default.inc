@@ -844,6 +844,12 @@ function club_views_views_default_views() {
   $handler->display->display_options['filters']['field_officer_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_officer_tid']['vocabulary'] = 'officers';
   $handler->display->display_options['path'] = 'clubofficers';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Officers';
+  $handler->display->display_options['menu']['description'] = 'Chapter/club officers';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
 
   /* Display: Board Members */
   $handler = $view->new_display('page', 'Board Members', 'page_2');
