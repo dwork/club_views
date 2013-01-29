@@ -6,7 +6,6 @@ php = 5.2.4
 version = 7.x-1.0
 project = club_views
 dependencies[] = ctools
-dependencies[] = rotary_projects_membership
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
