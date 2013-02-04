@@ -701,6 +701,8 @@ function club_views_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Members';
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -779,6 +781,8 @@ function club_views_views_default_views() {
 
   /* Display: Officers */
   $handler = $view->new_display('page', 'Officers', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Officers';
   $handler->display->display_options['display_description'] = 'Club Officers';
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: User: Active */
@@ -1282,16 +1286,6 @@ function club_views_views_default_views() {
   $handler->display->display_options['filters']['field_status_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_status_tid']['vocabulary'] = 'member_status';
   $handler->display->display_options['filters']['field_status_tid']['hierarchy'] = 1;
-  /* Filter criterion: Field: Chapter/Club (field_chapter) */
-  $handler->display->display_options['filters']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
-  $handler->display->display_options['filters']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
-  $handler->display->display_options['filters']['field_chapter_target_id']['field'] = 'field_chapter_target_id';
-  $handler->display->display_options['filters']['field_chapter_target_id']['group'] = 1;
-  $handler->display->display_options['filters']['field_chapter_target_id']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_chapter_target_id']['expose']['operator_id'] = 'field_chapter_target_id_op';
-  $handler->display->display_options['filters']['field_chapter_target_id']['expose']['label'] = 'Club/Chapter';
-  $handler->display->display_options['filters']['field_chapter_target_id']['expose']['operator'] = 'field_chapter_target_id_op';
-  $handler->display->display_options['filters']['field_chapter_target_id']['expose']['identifier'] = 'field_chapter_target_id';
   /* Filter criterion: Field: First Name (field_first_name) */
   $handler->display->display_options['filters']['field_first_name_value']['id'] = 'field_first_name_value';
   $handler->display->display_options['filters']['field_first_name_value']['table'] = 'field_data_field_first_name';

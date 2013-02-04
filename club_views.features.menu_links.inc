@@ -55,11 +55,11 @@ function club_views_menu_default_menu_links() {
     'link_title' => 'Members',
     'options' => array(),
     'module' => 'system',
-    'hidden' => '1',
+    'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-46',
+    'weight' => '0',
   );
   // Exported menu link: main-menu:clubofficers
   $menu_links['main-menu:clubofficers'] = array(
