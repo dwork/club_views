@@ -632,6 +632,10 @@ function club_views_views_default_views() {
 ?>';
   $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
   $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
+  /* Sort criterion: Field: Chapter/Club (field_chapter) */
+  $handler->display->display_options['sorts']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
+  $handler->display->display_options['sorts']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
+  $handler->display->display_options['sorts']['field_chapter_target_id']['field'] = 'field_chapter_target_id';
   /* Sort criterion: Field: Last Name (field_last_name) */
   $handler->display->display_options['sorts']['field_last_name_value']['id'] = 'field_last_name_value';
   $handler->display->display_options['sorts']['field_last_name_value']['table'] = 'field_data_field_last_name';
